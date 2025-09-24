@@ -19,12 +19,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mozilaText: ["Mozilla Text", "sans-serif"], 
-        eduNsw: ["Edu NSW ACT Cursive", "cursive"],// Custom font name
+        firaSans: [ "Inter", "sans-serif"],// Custom font name
       },
     },
    },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
 

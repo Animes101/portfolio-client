@@ -1,9 +1,7 @@
 import { RouterProvider } from 'react-router-dom';
 import './App.css'
 
-
 import router from './routes/route';
-import AuthProvider from './context/AuthProvider';
 
 
 
@@ -13,10 +11,8 @@ function App() {
 
   return (
 
-    <div>
-        <AuthProvider>
+    <div className='font-firaSans'>
           <RouterProvider router={router} />
-        </AuthProvider>
     </div>
   )
 }
