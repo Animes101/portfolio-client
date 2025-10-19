@@ -1,26 +1,11 @@
+
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.png.png";
 import { motion } from "framer-motion";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen flex items-center">
+    <div className="hero bg-base-100 dark:bg-green-300 min-h-screen flex items-center">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content - Text */}
@@ -76,7 +61,7 @@ const Banner = () => {
         >
           <img
             src={logo}
-            className="border-4 border-violet-600 rounded-full shadow-lg w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
+            className="border-4 border-white  shadow-lg  rounded-full  w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
             alt="Profile"
           />
         </motion.div>
