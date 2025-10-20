@@ -31,7 +31,7 @@ const Banner = () => {
             "Hello Dear 😎",
             "Welcome to My Portfolio!",
             "I am Animes Barman",
-            "Junior MERN Stack Developer 💻",
+            "Junior MERN Stack Developer",
           ],
           autoStart: true,
           loop: true,

@@ -1,10 +1,13 @@
 import React from "react";
-import profileImg from "../assets/logo/logot.png"; // তোমার profile image path
+import profileImg from "../assets/logo/logo.png.png"; // profile image path
 
 const AboutPage = () => {
   return (
     <div className="container mx-auto py-20 px-4">
-      <h1 className="text-4xl font-bold mb-10 text-center">About Me</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">About Me</h1>
+      
+      {/* Full Width Horizontal Line */}
+      <hr className="border-t-2 border-blue-500 mb-10 w-full" />
 
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* Profile Image */}

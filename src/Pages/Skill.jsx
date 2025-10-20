@@ -38,9 +38,13 @@ const Skill = () => {
   const activeSkills = getActiveSkills();
 
   return (
-    <div className="mt-32 container mx-auto ">
+    <div className="mt-32 container mx-auto px-4">
+      {/* Heading */}
+      <h1 className="text-4xl font-bold mb-4 text-center">Skills</h1>
+      <hr className="border-t-2 border-blue-500 mb-10 w-full" />
+
       {/* Tabs */}
-      <div role="tablist" className="tabs tabs-lift mb-8 flex flex-wrap gap-2">
+      <div role="tablist" className="tabs tabs-lift mb-8 flex flex-wrap gap-2 justify-center">
         {["Frontend","Backend","Firebase","Version Control","Programming Fundamentals","Tools & Platforms","Authentication & Security","AI & Modern Tech","Extra","UI / UX Design"].map(tab => (
           <button
             key={tab}
@@ -59,7 +63,7 @@ const Skill = () => {
           <div key={i} className="flex items-center gap-4 p-4 border rounded-lg shadow hover:shadow-lg transition">
             <img src={skill.logo} alt={skill.name} className="w-8 h-8"/>
             <div className="w-full">
-              <div className="flex justify-between mb-1">
+              <div className="flex justify-between mb-1 my-14">
                 <span className="font-medium">{skill.name}</span>
                 <span className="font-medium">{skill.level}</span>
                 <span className="text-sm text-gray-500">{skill.percentage}%</span>
