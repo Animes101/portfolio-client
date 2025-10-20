@@ -4,7 +4,7 @@ import logo from "../../../src/assets/logo/logot.png";
 
 const Navbar = () => {
   // 🌙 Theme state (light / dark)
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const checkboxRef = useRef(null);
 
   // 🌓 Theme toggle handler
@@ -22,7 +22,9 @@ const Navbar = () => {
   // 🎯 Active NavLink styling
   const linkClasses = ({ isActive }) =>
     isActive
-      ? "flex items-center px-4 -mb-1 border-b-2 border-black font-semibold"
+      // পরিবর্তন: hardcoded 'border-black' এর বদলে 'border-primary' ব্যবহার করুন।
+      // 'primary' কালারটি luxury থিমে অ্যাকসেন্ট কালার হিসেবে কাজ করবে।
+      ? "flex items-center px-4 -mb-1 border-b-2 border-primary font-semibold transition-colors duration-300" 
       : "flex items-center px-4 -mb-1 border-b-2 border-transparent hover:border-primary transition-colors duration-300";
 
   return (
@@ -34,7 +36,7 @@ const Navbar = () => {
       <div className="navbar-start">
         {/* 📱 Mobile Dropdown Menu */}
         <div className="dropdown">
-          <div tabIndex={0} className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden"> {/* role="button" যোগ করা হলো */}
             {/* ☰ Mobile Menu Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +52,8 @@ const Navbar = () => {
           {/* 📋 Mobile Dropdown Items */}
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 dark:bg-base-200 rounded-box mt-3 w-52 p-2 shadow"
+            // পরিবর্তন: 'dark:bg-base-200' সরিয়ে দেওয়া হলো, 'bg-base-100' থিম অনুযায়ী কাজ করবে।
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow"
           >
             <li><NavLink to="/" className={linkClasses}>Home</NavLink></li>
             <li><NavLink to="/about" className={linkClasses}>About</NavLink></li>
@@ -62,7 +65,8 @@ const Navbar = () => {
 
         {/* 🖼️ Logo Section */}
         <NavLink to="/" className="btn btn-ghost text-xl">
-          <img src={logo} className="w-[50px] rounded-full bg-white border-2 border-black" alt="logo" />
+          {/* Logo-এর বর্ডারটিকেও semantic color-এ পরিবর্তন করলে ভালো হয় (ঐচ্ছিক) */}
+          <img src={logo} className="w-[50px] rounded-full bg-white border-2 border-base-content" alt="logo" />
         </NavLink>
       </div>
 

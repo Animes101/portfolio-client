@@ -11,7 +11,7 @@ function App() {
 
   return (
 
-    <div className='font-firaSans'>
+    <div className='font-firaSans  bg-base-100'>
           <RouterProvider router={router} />
     </div>
   )

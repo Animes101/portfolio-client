@@ -2,10 +2,11 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.png.png";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-100 dark:bg-green-300 min-h-screen flex items-center">
+    <div className="hero min-h-screen flex items-center">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Content - Text */}
@@ -15,7 +16,7 @@ const Banner = () => {
           transition={{ duration: 1 }}
           className="flex flex-col justify-center"
         >
-          <h3 className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
+          <h3 className="text-lg md:text-xl font-semibold text-gray-700">
             Hi, I’m Animes Barman
           </h3>
           <motion.h1
@@ -24,7 +25,20 @@ const Banner = () => {
             transition={{ duration: 1, delay: 0.2 }}
             className="text-3xl md:text-5xl font-bold mt-2"
           >
-            Frontend Developer
+              <Typewriter
+        options={{
+          strings: [
+            "Hello Dear 😎",
+            "Welcome to My Portfolio!",
+            "I am Animes Barman",
+            "Junior MERN Stack Developer 💻",
+          ],
+          autoStart: true,
+          loop: true,
+          delay: 50, // typing speed
+          deleteSpeed: 40, // deleting speed
+        }}
+      />
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -45,7 +59,7 @@ const Banner = () => {
             transition={{ duration: 1, delay: 0.6 }}
             className="flex gap-4 mt-4"
           >
-            <button className="btn btn-primary">Download CV</button>
+            <button className="btn btn-secondary">Download CV</button>
             <Link to="/contact" className="btn btn-outline">
               Contact Me
             </Link>
