@@ -1,0 +1,83 @@
+[
+  {
+    "category": "Frontend",
+    "skills": [
+      { "name": "HTML", "level": "Advanced", "percentage": 95, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { "name": "CSS", "level": "Advanced", "percentage": 90, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { "name": "JavaScript", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { "name": "Tailwind CSS", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+      { "name": "React", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      { "name": "Node.js", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { "name": "Express.js", "level": "Intermediate", "percentage": 75, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+      { "name": "MongoDB", "level": "Intermediate", "percentage": 70, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" }
+    ]
+  },
+  {
+    "category": "Firebase",
+    "skills": [
+      { "name": "Firebase Auth", "level": "Intermediate", "percentage": 75, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+      { "name": "Firestore", "level": "Intermediate", "percentage": 70, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+      { "name": "Firebase Hosting", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" }
+    ]
+  },
+  {
+    "category": "Version Control",
+    "skills": [
+      { "name": "Git", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { "name": "GitHub", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" }
+    ]
+  },
+  {
+    "category": "Programming Fundamentals",
+    "skills": [
+      { "name": "C", "level": "Beginner", "percentage": 60, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+      { "name": "C++", "level": "Intermediate", "percentage": 70, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+      { "name": "Data Structures & Algorithms", "level": "Learning", "percentage": 65, "logo": "https://cdn-icons-png.flaticon.com/512/2721/2721299.png" }
+    ]
+  },
+  {
+    "category": "Tools & Platforms",
+    "skills": [
+      { "name": "VS Code", "level": "Advanced", "percentage": 95, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+      { "name": "Postman", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+      { "name": "Vercel", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+      { "name": "Netlify", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" },
+      { "name": "Surge", "level": "Intermediate", "percentage": 75, "logo": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png" }
+    ]
+  },
+  {
+    "category": "Authentication & Security",
+    "skills": [
+      { "name": "JWT (JSON Web Token)", "level": "Intermediate", "percentage": 75, "logo": "https://cdn-icons-png.flaticon.com/512/8297/8297843.png" },
+      { "name": "Bcrypt", "level": "Intermediate", "percentage": 70, "logo": "https://cdn-icons-png.flaticon.com/512/11373/11373673.png" }
+    ]
+  },
+  {
+    "category": "AI & Modern Tech",
+    "skills": [
+      { "name": "ChatGPT Prompting", "level": "Intermediate", "percentage": 75, "logo": "https://cdn-icons-png.flaticon.com/512/4712/4712100.png" },
+      { "name": "Gemini / Claude", "level": "Beginner", "percentage": 60, "logo": "https://cdn-icons-png.flaticon.com/512/4712/4712100.png" },
+      { "name": "AI Tools", "level": "Beginner", "percentage": 60, "logo": "https://cdn-icons-png.flaticon.com/512/4712/4712100.png" }
+    ]
+  },
+  {
+    "category": "Extra",
+    "skills": [
+      { "name": "API Integration", "level": "Intermediate", "percentage": 80, "logo": "https://cdn-icons-png.flaticon.com/512/1163/1163624.png" },
+      { "name": "Render", "level": "Intermediate", "percentage": 80, "logo": "https://cdn-icons-png.flaticon.com/512/4248/4248443.png" },
+      { "name": "Docker (Basic)", "level": "Beginner", "percentage": 50, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
+    ]
+  },
+  {
+    "category": "UI / UX Design",
+    "skills": [
+      { "name": "Figma", "level": "Intermediate", "percentage": 75, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+      { "name": "Canva", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" }
+    ]
+  }
+]

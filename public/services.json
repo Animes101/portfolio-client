@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Web Development",
+    "description": "Building responsive and dynamic websites using HTML, CSS, JavaScript, React, and Tailwind CSS.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+    "category": "Frontend"
+  },
+  {
+    "title": "Backend Development",
+    "description": "Creating robust backend systems with Node.js, Express.js, MongoDB, and REST APIs.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1055/1055673.png",
+    "category": "Backend"
+  },
+  {
+    "title": "UI / UX Design",
+    "description": "Designing user-friendly interfaces using Figma, Canva and modern design principles.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "category": "Design"
+  },
+  {
+    "title": "Firebase Integration",
+    "description": "Implementing authentication, database, and hosting using Firebase for modern web apps.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/888/888879.png",
+    "category": "Backend"
+  },
+  {
+    "title": "Version Control",
+    "description": "Managing code efficiently using Git and GitHub for collaboration and deployment.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Deployment & Hosting",
+    "description": "Deploying websites and apps using Vercel, Netlify, Surge, and Render.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/3524/3524659.png",
+    "category": "Deployment"
+  },
+  {
+    "title": "AI & Modern Tech",
+    "description": "Integrating AI tools, ChatGPT APIs, and modern technologies to enhance web apps.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712100.png",
+    "category": "AI"
+  }
+]
