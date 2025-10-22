@@ -9,20 +9,20 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { AiFillMessage } from "react-icons/ai";
 
 function App() {
-  return (
+  return ( 
     <div className="font-lora">
       <div className="fab fab-flower fixed right-0 bottom-[400px]">
         {/* a focusable div with tabIndex is necessary to work on all browsers. role="button" is necessary for accessibility */}
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-lg btn-circle btn-success"
+          className="btn btn-lg btn-circle bg-buttonBankground border-backgroundDark"
         >
-          <AiFillMessage />
+          <AiFillMessage  className="text-backgroundDark"/>
         </div>
 
         {/* Main Action button replaces the original button when FAB is open */}
-        <button className="fab-main-action btn btn-circle btn-lg">M</button>
+        <button className="fab-main-action bg-buttonBankground border-backgroundDark btn btn-circle btn-lg">M</button>
 
         {/* buttons that show up when FAB is open */}
         <a href="https://www.linkedin.com/in/animes-barman-6470692b9/" target="_black" className="btn btn-lg btn-circle"><IoLogoLinkedin /></a>

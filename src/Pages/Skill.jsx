@@ -50,7 +50,7 @@ const Skill = () => {
           <button
             key={tab}
             role="tab"
-            className={`${activeTab === tab ? "tab-active text-buttonBankground bg-backgroundDark " : "bg-backgroundBg dark:bg-backgroundDark"} border-t-2 border-r-2 border-l-2 p-2`}
+            className={`${activeTab === tab ? "tab-active text-buttonBankground dark:text-textColor bg-backgroundDark border-buttonBankground dark:border-buttonTextColor " : "bg-backgroundBg dark:bg-backgroundDark border-textColor"} border-t-2 border-r-2 border-l-2 p-2 rounded-md`}
             onClick={() => setActiveTab(tab)}
           >
             {tab}
@@ -59,18 +59,18 @@ const Skill = () => {
       </div>
 
       {/* Skills */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
         {activeSkills?.[0]?.skills?.map((skill, i) => (
-          <div key={i} className="flex items-center gap-4 p-4 border bg-backgroundDark rounded-lg shadow hover:shadow-lg transition">
-            <img src={skill.logo} alt={skill.name} className="w-8 h-8"/>
-            <div className="w-full">
+          <div key={i} className="flex flex-col items-center cursor-pointer gap-4 p-4 border border-buttonBankground dark:border-textColor bg-backgroundBg dark:bg-backgroundDark rounded-lg shadow shadow-buttonTextColor  hover:shadow-lg transition">
+            <img src={skill.logo} alt={skill.name} className="w-14 h-14"/>
+            <div className="w-full text-buttonBankground dark:text-textColor">
               <div className="flex justify-between mb-1 my-14">
                 <span className="font-medium">{skill.name}</span>
                 <span className="font-medium">{skill.level}</span>
-                <span className="text-sm text-gray-500">{skill.percentage}%</span>
+                <span className="text-sm">{skill.percentage}%</span>
               </div>
-              <div className="w-full bg-gray-200 h-2 rounded-full">
-                <div className="bg-blue-500 h-2 rounded-full" style={{ width: `${skill.percentage}%` }}></div>
+              <div className="w-full bg-textColor  h-2 rounded-full">
+                <div className="bg-buttonTextColor dark:bg-buttonTextColor  h-2 rounded-full" style={{ width: `${skill.percentage}%` }}></div>
               </div>
             </div>
           </div>

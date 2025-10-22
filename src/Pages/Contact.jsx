@@ -34,10 +34,11 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="container mx-auto py-20 px-4">
+    <div className="bg-backgroundBg dark:bg-backgroundDark text-textColor">
+      <div className="container mx-auto py-20 px-4">
       {/* Heading */}
-      <h1 className="text-4xl font-bold mb-4 text-center">Contact Me</h1>
-      <hr className="border-t-2 border-blue-500 w-full mb-10" />
+      <h1 className="text-4xl font-bold mb-4 text-center text-buttonBankground dark:text-textColor">Contact Me</h1>
+      <hr className="border-t-2 border-buttonBankground dark:border-textColor w-full mb-10" />
 
       {submitted && (
         <div className="bg-green-100 text-green-800 p-4 mb-6 rounded">
@@ -95,6 +96,7 @@ const ContactPage = () => {
           Send Message
         </button>
       </form>
+    </div>
     </div>
   );
 };

@@ -29,7 +29,7 @@ const Navbar = () => {
   // 🎯 Active NavLink styling
   const linkClasses = ({ isActive }) =>
     isActive
-      ? "flex items-center px-4 -mb-1 border-b-2 border-borderColor font-semibold transition-colors duration-300"
+      ? "flex items-center px-4 -mb-1 border-b-2 text-buttonBankground border-borderColor font-semibold transition-colors duration-300"
       : "flex items-center px-4 -mb-1 border-b-2 border-transparent hover:border-borderColor transition-colors duration-300";
 
   return (
