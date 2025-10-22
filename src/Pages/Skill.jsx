@@ -38,10 +38,11 @@ const Skill = () => {
   const activeSkills = getActiveSkills();
 
   return (
-    <div className="mt-32 container mx-auto px-4">
+      <div className="bg-backgroundBg dark:bg-backgroundDark min-h-screen text-textColor pt-32">
+        <div className="container mx-auto px-4">
       {/* Heading */}
-      <h1 className="text-4xl font-bold mb-4 text-center">Skills</h1>
-      <hr className="border-t-2 border-blue-500 mb-10 w-full" />
+      <h1 className="text-4xl font-bold mb-4 text-center text-buttonBankground dark:text-textColor">Skills</h1>
+      <hr className="border-t-2 border-buttonBankground dark:border-textColor mb-10 w-full" />
 
       {/* Tabs */}
       <div role="tablist" className="tabs tabs-lift mb-8 flex flex-wrap gap-2 justify-center">
@@ -49,7 +50,7 @@ const Skill = () => {
           <button
             key={tab}
             role="tab"
-            className={`tab ${activeTab === tab ? "tab-active" : ""}`}
+            className={`${activeTab === tab ? "tab-active text-buttonBankground bg-backgroundDark " : "bg-backgroundBg dark:bg-backgroundDark"} border-t-2 border-r-2 border-l-2 p-2`}
             onClick={() => setActiveTab(tab)}
           >
             {tab}
@@ -60,7 +61,7 @@ const Skill = () => {
       {/* Skills */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {activeSkills?.[0]?.skills?.map((skill, i) => (
-          <div key={i} className="flex items-center gap-4 p-4 border rounded-lg shadow hover:shadow-lg transition">
+          <div key={i} className="flex items-center gap-4 p-4 border bg-backgroundDark rounded-lg shadow hover:shadow-lg transition">
             <img src={skill.logo} alt={skill.name} className="w-8 h-8"/>
             <div className="w-full">
               <div className="flex justify-between mb-1 my-14">
@@ -76,6 +77,7 @@ const Skill = () => {
         ))}
       </div>
     </div>
+      </div>
   );
 };
 

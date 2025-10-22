@@ -10,7 +10,7 @@ import { AiFillMessage } from "react-icons/ai";
 
 function App() {
   return (
-    <div className="font-firaSans bg-base-100">
+    <div className="font-lora">
       <div className="fab fab-flower fixed right-0 bottom-[400px]">
         {/* a focusable div with tabIndex is necessary to work on all browsers. role="button" is necessary for accessibility */}
         <div

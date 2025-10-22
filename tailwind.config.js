@@ -1,32 +1,36 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [],
-//   theme: {
-//     extend: {
-//       fontFamily: {
-//         mozilaText: ["Mozilla Text", "sans-serif"], 
-//         eduNsw: ["Edu NSW ACT Cursive", "cursive"],// Custom font name
-//       },
-//     },
-//   },
-//   plugins: [],
-// }
-
-
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
   theme: {
     extend: {
       fontFamily: {
-        firaSans: [ "Inter", "sans-serif"],// Custom font name
+        lora: ["lora", "serif"], // Custom font
       },
-    },
-   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light", "dark"], // light and dark theme enable
-  },
-}
+      colors:{
+        borderColor:'#292218',
+        backgroundBg:'#5D555A',
+        backgroundDark:'#44444C',
+        buttonBankground:'#E6A87F',
+        textColor:'#D2B7B1',
+        buttonTextColor:'#292218'
 
+      }
+    },
+  },
+
+  // ⚡️ DaisyUI রাখা হচ্ছে শুধু component এর জন্য (কোনো থিম ছাড়া)
+  plugins: [require("daisyui")],
+
+  // ❌ DaisyUI এর থিম disable করা হচ্ছে
+  daisyui: {
+    themes: false, // No light/dark themes from DaisyUI
+  },
+
+  // 🌙 Enable Tailwind's class-based dark mode
+  darkMode: "class",
+}
 

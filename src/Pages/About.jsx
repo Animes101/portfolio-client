@@ -3,13 +3,14 @@ import profileImg from "../assets/logo/logo.png.png"; // profile image path
 
 const AboutPage = () => {
   return (
-    <div className="container mx-auto py-20 px-4">
-      <h1 className="text-4xl font-bold mb-4 text-center">About Me</h1>
+   <div className="py-20 px-4 min-h-screen  bg-backgroundDark  text-textColor">
+     <div className="container mx-auto">
+      <h1 className="text-4xl font-bold mb-4 text-center text-buttonBankground dark:text-textColor">About Me</h1>
       
       {/* Full Width Horizontal Line */}
-      <hr className="border-t-2 border-blue-500 mb-10 w-full" />
+      <hr className="mb-14 md:mb-32 border-buttonBankground w-full" />
 
-      <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12  h-full ">
         {/* Profile Image */}
         <div className="flex-shrink-0 w-48 h-48 rounded-full overflow-hidden shadow-lg">
           <img
@@ -50,7 +51,7 @@ const AboutPage = () => {
               href="/path-to-your-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
+              className="btn bg-buttonBankground text-buttonTextColor dark:bg-textColor"
             >
               Download CV
             </a>
@@ -58,6 +59,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 
