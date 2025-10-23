@@ -29,8 +29,8 @@ const Navbar = () => {
   // 🎯 Active NavLink styling
   const linkClasses = ({ isActive }) =>
     isActive
-      ? "flex items-center px-4 -mb-1 border-b-2 text-buttonBankground border-borderColor font-semibold transition-colors duration-300"
-      : "flex items-center px-4 -mb-1 border-b-2 border-transparent hover:border-borderColor transition-colors duration-300";
+      ? "flex items-center px-4 -mb-1 border-b-2 hover:bg-backgroundDark text-buttonBankground border-buttonBankground font-semibold transition-colors duration-300"
+      : "flex items-center px-4 -mb-1 border-b-2 hover:bg-backgroundDark border-transparent hover:border-buttonBankground transition-colors duration-300";
 
   return (
     <div className="transition-colors duration-300  text-textColor dark:text-textColor border-b-2 border-b-borderColor bg-backgroundBg dark:bg-backgroundDark bg-opacity-90 shadow-sm fixed top-0 left-0 w-full">
@@ -96,7 +96,7 @@ const Navbar = () => {
           <NavLink to="/" className="bg-backgroundDark dark:bg-backgroundDark text-xl">
             <img
               src={logo}
-              className=" w-[30px] md:w-[50px] rounded-full bg-backgroundBg shadow-md shadow-borderColor"
+              className=" w-[30px] md:w-[50px] rounded-full bg-buttonBankground dark:bg-textColor shadow-md shadow-borderColor"
               alt="logo"
             />
           </NavLink>
@@ -151,7 +151,7 @@ const Navbar = () => {
 
             {/* ☀️ Sun Icon */}
             <svg
-              className="swap-off fill-current w-8 h-8 text-textColor"
+              className="swap-off fill-current w-8 h-8 text-buttonBankground"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >

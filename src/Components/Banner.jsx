@@ -59,7 +59,7 @@ const Banner = () => {
             className="flex gap-4 mt-4"
           >
             <button className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor">Download CV</button>
-            <Link to="/contact" className="btn btn-outline text-buttonTextColor">
+            <Link to="/contact" className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground">
               Contact Me
             </Link>
           </motion.div>
@@ -74,7 +74,7 @@ const Banner = () => {
         >
           <img
             src={logo}
-            className=" shadow-lg shadow-borderColor bg-backgroundDark dark:bg-backgroundBg   rounded-full  w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
+            className=" shadow-lg  transition-colors duration-300 shadow-borderColor bg-backgroundDark dark:bg-backgroundBg   rounded-full  w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
             alt="Profile"
           />
         </motion.div>

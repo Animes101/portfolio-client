@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../assets/logo/logo.png.png"; // profile image path
+import profileImg from "../assets/logo/logo.png.png"; 
 
 const AboutPage = () => {
   return (
@@ -16,14 +16,14 @@ const AboutPage = () => {
           <img
             src={profileImg}
             alt="Profile"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover bg-buttonBankground dark:bg-backgroundBg"
           />
         </div>
 
         {/* Bio / Intro */}
         <div className="flex-1 space-y-4">
           <p className="text-lg">
-            Hello! I'm <span className="font-bold">Your Name</span>, a passionate
+            Hello! I'm <span className="font-bold text-buttonBankground">Animes Barman</span>, a passionate
             web developer with expertise in frontend and backend development.
             I love building responsive, user-friendly websites and applications
             using modern technologies.

@@ -34,7 +34,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-backgroundBg dark:bg-backgroundDark text-textColor">
+    <div className="bg-backgroundBg dark:bg-backgroundDark text-textColor ">
       <div className="container mx-auto py-20 px-4">
       {/* Heading */}
       <h1 className="text-4xl font-bold mb-4 text-center text-buttonBankground dark:text-textColor">Contact Me</h1>
@@ -48,7 +48,7 @@ const ContactPage = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="max-w-xl mx-auto p-8 rounded-lg shadow-md"
+        className="max-w-xl mx-auto p-8 rounded-lg shadow-md  border-2 border-buttonBankground dark:border-textColor "
       >
         <div className="mb-6">
           <label className="block mb-2 font-medium">Name</label>
@@ -58,7 +58,7 @@ const ContactPage = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your Name"
-            className="input input-bordered w-full"
+            className="input input-bordered w-full bg-transparent border-textColor"
             required
           />
         </div>
@@ -71,7 +71,7 @@ const ContactPage = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="your@email.com"
-            className="input input-bordered w-full"
+            className="input input-bordered w-full bg-transparent border-textColor o"
             required
           />
         </div>
@@ -83,7 +83,7 @@ const ContactPage = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Your message..."
-            className="textarea textarea-bordered w-full"
+            className="textarea textarea-bordered w-full bg-transparent border-textColor"
             rows={5}
             required
           ></textarea>
@@ -91,7 +91,7 @@ const ContactPage = () => {
 
         <button
           type="submit"
-          className="btn btn-primary w-full"
+          className="btn bg-buttonBankground text-buttonTextColor w-full"
         >
           Send Message
         </button>

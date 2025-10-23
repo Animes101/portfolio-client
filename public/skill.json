@@ -5,7 +5,7 @@
       { "name": "HTML", "level": "Advanced", "percentage": 95, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { "name": "CSS", "level": "Advanced", "percentage": 90, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
       { "name": "JavaScript", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      { "name": "Tailwind CSS", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+      { "name": "Tailwind CSS", "level": "Intermediate", "percentage": 80, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain.svg" },
       { "name": "React", "level": "Intermediate", "percentage": 85, "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
     ]
   },

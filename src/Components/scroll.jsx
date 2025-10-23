@@ -30,7 +30,7 @@ const ScrollButton = () => {
       {visible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition z-50"
+          className="fixed bottom-8 right-8 p-3 rounded-full bg-buttonBankground text-backgroundDark text-3xl dark:bg-textColor  shadow-lg transition z-50"
           title="Scroll to top"
         >
           ↑

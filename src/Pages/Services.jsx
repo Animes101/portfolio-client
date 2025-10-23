@@ -8,7 +8,7 @@ const Services = () => {
      <div className='bg-backgroundDark text-textColor'>
       <div className="container mx-auto py-20 px-4">
       {/* Heading */}
-      <h1 className="text-4xl font-bold  text-buttonBankground dark:text-textColor mb-4 text-center animate-fadeIn">My Services</h1>
+      <h1 className="text-4xl font-bold  text-buttonBankground dark:text-textColor mb-4 text-center">My Services</h1>
       <hr className="border-t-2 border-buttonBankground w-full mb-12 animate-grow" />
 
       {/* Services Cards */}
