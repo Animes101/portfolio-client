@@ -128,6 +128,11 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/Project" className={linkClasses}>
+                Project
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/contact" className={linkClasses}>
                 Contact
               </NavLink>

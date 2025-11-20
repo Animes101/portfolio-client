@@ -7,6 +7,7 @@ import About from "../Pages/About";
 import Skill from "../Pages/Skill";
 import Services from "../Pages/Services";
 import Contact from "../Pages/Contact";
+import Project from "../Pages/Project";
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       {path:'/about', element:<About />},
       {path:'/skill', element:<Skill />},
       {path:'/services', element:<Services />},
+      {path:'/project', element:<Project />},
       {path:'/contact', element:<Contact />},
 
     ],
