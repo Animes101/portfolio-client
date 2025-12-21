@@ -58,7 +58,14 @@ const Banner = () => {
             transition={{ duration: 1, delay: 0.6 }}
             className="flex gap-4 mt-4"
           >
-            <button className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor">Download CV</button>
+            <a
+  href="https://drive.google.com/file/d/1fo3k04yq0W7IZYFBUqQuRAfO12aKkkc2/view?usp=sharing" target="_blanck"
+  download
+  className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor"
+>
+  Download CV
+</a>
+
             <Link to="/contact" className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground">
               Contact Me
             </Link>

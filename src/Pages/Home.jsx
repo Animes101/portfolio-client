@@ -5,6 +5,7 @@ import Skill from './Skill'
 import About from './About'
 import Services from './Services'
 import ContactPage from './Contact'
+import Projects from './Project'
 
 const Home = () => {
   return (
@@ -19,6 +20,8 @@ const Home = () => {
       {/* <Skills /> */}
 
       <Skill />
+       
+       <Projects />
 
       <Services />
 
