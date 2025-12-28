@@ -49,8 +49,9 @@ const Projects = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-5 py-16">
-      <h2 className="text-4xl font-bold text-center mb-12">
+    <section className="bg-backgroundDark h-screen py-20">
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-12">
         My Projects
       </h2>
 
@@ -58,6 +59,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
+      </div>
       </div>
     </section>
   );

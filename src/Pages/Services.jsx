@@ -10,7 +10,7 @@ const Services = () => {
   const { data } = useFetch('services.json');
 
   return (
-    <div className='bg-backgroundDark text-textColor'>
+    <div className='bg-backgroundBg text-textColor'>
       <div className="container mx-auto py-20 px-4">
 
         {/* Heading */}

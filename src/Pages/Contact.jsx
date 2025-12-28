@@ -34,7 +34,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-backgroundBg dark:bg-backgroundDark text-textColor ">
+    <div className="bg-backgroundDark  h-screen dark:bg-backgroundDark text-textColor ">
       <div className="container mx-auto py-20 px-4">
       {/* Heading */}
       <h1 className="text-4xl font-bold mb-4 text-center text-buttonBankground dark:text-textColor">Contact Me</h1>
