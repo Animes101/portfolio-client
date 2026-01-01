@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <div className="bg-backgroundBg rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden">
+    <div className="bg-backgroundDark rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden ">
       {/* Image */}
       <img
         src={image}
@@ -23,9 +23,9 @@ const ProjectCard = ({ project }) => {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-2xl font-semibold mb-2">{name}</h3>
+        <h3 className="text-2xl font-semibold mb-2 text-buttonBankground">{name}</h3>
 
-        <p className="text-gray-600 text-sm mb-4">
+        <p className="text-buttonTextColor text-sm mb-4">
           {description}
         </p>
 
@@ -34,7 +34,7 @@ const ProjectCard = ({ project }) => {
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-100 border text-gray-700 px-3 py-1 rounded-full text-xs"
+              className="bg-buttonBankground cursor-pointer border text-gray-700 px-3 py-1 rounded-full text-xs"
             >
               {tech}
             </span>
@@ -47,7 +47,7 @@ const ProjectCard = ({ project }) => {
             href={liveLink}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1 text-blue-600 hover:underline"
+            className="flex items-center gap-1 text-buttonBankground hover:underline"
           >
             <FaExternalLinkAlt /> Live
           </a>
@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
             href={frontendRepo}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1 text-gray-800 hover:underline"
+            className="flex items-center gap-1 text-buttonBankground hover:underline"
           >
             <FaGithub /> Frontend
           </a>
@@ -66,7 +66,7 @@ const ProjectCard = ({ project }) => {
               href={backendRepo}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1 text-gray-800 hover:underline"
+              className="flex items-center gap-1 text-buttonBankground hover:underline"
             >
               <FaGithub /> Backend
             </a>

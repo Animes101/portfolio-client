@@ -4,10 +4,10 @@ import ProjectCard from "../Components/ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      name: "Restaurant Management System",
-      image: "https://i.ibb.co/5j0d7vF/restaurant.png",
+      name: "PuratonBazar.com",
+      image: "https://i.ibb.co.com/twK5r2jG/Screenshot-2026-01-01-151737.png",
       description:
-        "Full stack restaurant management system with admin dashboard, JWT authentication and payment integration.",
+        "Full stack E-commerce Website  with admin dashboard, JWT authentication and payment integration.",
       technologies: [
         "React",
         "Tailwind CSS",
@@ -21,24 +21,8 @@ const Projects = () => {
       backendRepo: "https://github.com/Animes101/puraton-bazar-bd-server",
     },
     {
-      name: "E-commerce Website",
-      image: "https://i.ibb.co/jr4M8n3/ecommerce.png",
-      description:
-        "MERN stack e-commerce website with user roles, cart system and secure checkout.",
-      technologies: [
-        "React",
-        "Tailwind",
-        "Firebase",
-        "Node",
-        "MongoDB",
-      ],
-      liveLink: "https://ecommerce-live.com",
-      frontendRepo: "https://github.com/yourname/ecommerce-frontend",
-      backendRepo: "https://github.com/yourname/ecommerce-backend",
-    },
-    {
       name: "Portfolio Website",
-      image: "https://i.ibb.co/xh9j2cR/portfolio.png",
+      image: "https://i.ibb.co.com/Rprgs108/Screenshot-2026-01-01-152121.png",
       description:
         "Personal portfolio website showcasing projects, skills and contact information.",
       technologies: ["React", "Tailwind CSS"],
