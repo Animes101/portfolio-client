@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
@@ -13,7 +14,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <div className="bg-backgroundDark rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden ">
+    <div className="bg-backgroundDark rounded-2xl shadow-md hover:shadow-2xl shadow-buttonBankground transition duration-300 overflow-hidden ">
       {/* Image */}
       <img
         src={image}

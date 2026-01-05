@@ -8,14 +8,7 @@ const projects = [
     image: "https://i.ibb.co.com/twK5r2jG/Screenshot-2026-01-01-151737.png",
     description:
       "Full stack E-commerce Website with admin dashboard, JWT authentication and payment integration.",
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-    ],
+    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT"],
     liveLink: "https://puratonbazar.netlify.app",
     frontendRepo: "https://github.com/Animes101/puraton-bazar-bd-client",
     backendRepo: "https://github.com/Animes101/puraton-bazar-bd-server",
@@ -27,20 +20,21 @@ const projects = [
     description:
       "Personal portfolio website showcasing projects, skills and contact information.",
     technologies: ["React", "Tailwind CSS"],
-    liveLink: "https://yourportfolio.com",
-    frontendRepo: "https://github.com/yourname/portfolio",
+    liveLink: "https://animes-portfolio.netlify.app",
+    frontendRepo: "https://github.com/Animes101/portfolio-client",
     backendRepo: "",
   },
 ];
 
+const tabs = ["all", "frontend", "backend", "fullstack"];
+
 const Projects = () => {
-  // 🔥 default = all
   const [activeTab, setActiveTab] = useState("all");
 
   const filteredProjects =
     activeTab === "all"
       ? projects
-      : projects.filter((project) => project.type === activeTab);
+      : projects.filter((p) => p.type === activeTab);
 
   return (
     <section className="bg-backgroundDark py-20 min-h-screen">
@@ -48,48 +42,33 @@ const Projects = () => {
         <h1 className="text-4xl font-bold text-buttonBankground mb-6 text-center">
           My Projects
         </h1>
+        <hr className="border-t-2 border-buttonBankground dark:border-textColor mb-10 w-full" />
 
-        {/* 🔥 daisyUI Tabs */}
-        <div className="flex justify-center mb-10">
-          <div className="tabs tabs-boxed">
-            <a
-              className={`tab ${activeTab === "all" && "tab-active"}`}
-              onClick={() => setActiveTab("all")}
+        {/* ✅ Tabs (same as old working style) */}
+        <div
+          role="tablist"
+          className="tabs tabs-lift mb-10 flex flex-wrap gap-2 justify-center"
+        >
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              role="tab"
+              onClick={() => setActiveTab(tab)}
+              className={`${activeTab === tab ? "tab-active text-buttonBankground dark:text-textColor bg-backgroundDark border-buttonBankground dark:border-buttonTextColor " : "bg-backgroundBg dark:bg-backgroundDark border-textColor"} border-t-2 border-r-2 border-l-2 p-2 rounded-md`}
             >
-              All
-            </a>
-
-            <a
-              className={`tab ${activeTab === "frontend" && "tab-active"}`}
-              onClick={() => setActiveTab("frontend")}
-            >
-              Frontend
-            </a>
-
-            <a
-              className={`tab ${activeTab === "backend" && "tab-active"}`}
-              onClick={() => setActiveTab("backend")}
-            >
-              Backend
-            </a>
-
-            <a
-              className={`tab ${activeTab === "fullstack" && "tab-active"}`}
-              onClick={() => setActiveTab("fullstack")}
-            >
-              Full Stack
-            </a>
-          </div>
+              {tab}
+            </button>
+          ))}
         </div>
 
-        {/* 🔥 Project Grid */}
+        {/* ✅ Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.length > 0 ? (
+          {filteredProjects.length ? (
             filteredProjects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))
           ) : (
-            <p className="text-center col-span-full text-gray-400">
+            <p className="col-span-full text-center text-gray-400">
               No projects found
             </p>
           )}
