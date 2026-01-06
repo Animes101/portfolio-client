@@ -33,7 +33,7 @@ const Navbar = () => {
       : "flex items-center px-4 -mb-1 border-b-2 hover:bg-backgroundDark border-transparent hover:border-buttonBankground transition-colors duration-300";
 
   return (
-    <div className="transition-colors duration-300  text-textColor dark:text-textColor border-b-2 border-b-borderColor bg-backgroundBg dark:bg-backgroundDark bg-opacity-90 shadow-sm fixed top-0 left-0 w-full">
+    <div className="transition-colors duration-300  text-textColor dark:text-textColor border-b-2 border-b-borderColor bg-backgroundBg dark:bg-backgroundDark bg-opacity-90 shadow-sm fixed top-0 left-0 w-full z-50">
       <div className="navbar container mx-auto bg-backgroundDark w-[90%] dark:bg-backgroundDark z-50 text-xl font-bold px-10 rounded-br-[100px] border-r-2 border-borderColor">
         {/* =====================================================
           🌐 NAVBAR START SECTION
