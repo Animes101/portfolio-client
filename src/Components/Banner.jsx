@@ -1,26 +1,130 @@
+// import { Link } from "react-router-dom";
+// import logo from "../assets/logo/logo.png.png";
+// import { motion } from "framer-motion";
+// import Typewriter from "typewriter-effect";
+
+// import cv from "../assets/logo/cv.pdf";
+
+// const Banner = () => {
+//   return (
+//     <div className="hero min-h-screen flex items-center text-textColor dark:text-textColor bg-backgroundBg dark:bg-backgroundDark">
+//       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+//         {/* Left Content - Text */}
+//         <motion.div
+//           initial={{ opacity: 0, x: -50 }}
+//           animate={{ opacity: 1, x: 0 }}
+//           transition={{ duration: 1 }}
+//           className="flex flex-col justify-center"
+//         >
+//           <h3 className="text-lg md:text-xl font-semibold">
+//             Hi, I’m Animes Barman
+//           </h3>
+//           <motion.h1
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 1, delay: 0.2 }}
+//             className="text-3xl md:text-5xl font-bold mt-2 text-buttonBankground dark:text-textColor"
+//           >
+//             <Typewriter
+//               options={{
+//                 strings: [
+//                   "Hello Dear 😎",
+//                   "Welcome to My Portfolio!",
+//                   "I am Animes Barman",
+//                   "Junior MERN Stack Developer",
+//                 ],
+//                 autoStart: true,
+//                 loop: true,
+//                 delay: 50, // typing speed
+//                 deleteSpeed: 40, // deleting speed
+//               }}
+//             />
+//           </motion.h1>
+//           <motion.p
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: 1 }}
+//             transition={{ duration: 1, delay: 0.4 }}
+//             className="py-6"
+//           >
+//             with a passion for crafting intuitive and visually appealing
+//             websites. From responsive design to smooth user interactions, I
+//             focus on every detail. Let's collaborate to bring your vision to
+//             life. Explore my portfolio and see how I can help you achieve your
+//             goals.
+//           </motion.p>
+
+//           {/* Buttons */}
+//           <motion.div
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 1, delay: 0.6 }}
+//             className="flex gap-4 mt-4"
+//           >
+//             <a
+//               href={cv}
+//               target="_blank"
+//               download
+//               className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor"
+//             >
+//               Download CV
+//             </a>
+
+//             <Link
+//               to="/contact"
+//               className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground"
+//             >
+//               Contact Me
+//             </Link>
+//           </motion.div>
+//         </motion.div>
+
+//         {/* Right Content - Image */}
+//         <motion.div
+//           initial={{ opacity: 0, scale: 0.8 }}
+//           animate={{ opacity: 1, scale: 1 }}
+//           transition={{ duration: 1, delay: 0.8 }}
+//           className="flex justify-center items-center "
+//         >
+//           <img
+//             src={logo}
+//             className=" shadow-lg  transition-colors duration-300 shadow-borderColor bg-backgroundDark dark:bg-backgroundBg   rounded-full  w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
+//             alt="Profile"
+//           />
+//         </motion.div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Banner;
+
+
+
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.png.png";
-import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import cv from "../assets/logo/cv.pdf";
 
 const Banner = () => {
   return (
     <div className="hero min-h-screen flex items-center text-textColor dark:text-textColor bg-backgroundBg dark:bg-backgroundDark">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left Content - Text */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+
+        {/* Left Content */}
+        <div
+          data-aos="fade-right"
           className="flex flex-col justify-center"
         >
-          <h3 className="text-lg md:text-xl font-semibold">
+          <h3
+            data-aos="fade-down"
+            className="text-lg md:text-xl font-semibold"
+          >
             Hi, I’m Animes Barman
           </h3>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+
+          <h1
+            data-aos="zoom-in"
+            data-aos-delay="200"
             className="text-3xl md:text-5xl font-bold mt-2 text-buttonBankground dark:text-textColor"
           >
             <Typewriter
@@ -33,15 +137,15 @@ const Banner = () => {
                 ],
                 autoStart: true,
                 loop: true,
-                delay: 50, // typing speed
-                deleteSpeed: 40, // deleting speed
+                delay: 50,
+                deleteSpeed: 40,
               }}
             />
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
+          </h1>
+
+          <p
+            data-aos="fade-up"
+            data-aos-delay="400"
             className="py-6"
           >
             with a passion for crafting intuitive and visually appealing
@@ -49,45 +153,49 @@ const Banner = () => {
             focus on every detail. Let's collaborate to bring your vision to
             life. Explore my portfolio and see how I can help you achieve your
             goals.
-          </motion.p>
+          </p>
 
           {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
+          <div
+            data-aos="fade-up"
+            data-aos-delay="600"
             className="flex gap-4 mt-4"
           >
             <a
-  href="https://drive.google.com/file/d/1fo3k04yq0W7IZYFBUqQuRAfO12aKkkc2/view?usp=sharing" target="_blanck"
-  download
-  className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor"
->
-  Download CV
-</a>
+              href={cv}
+              target="_blank"
+              download
+              className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor"
+            >
+              Download CV
+            </a>
 
-            <Link to="/contact" className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground">
+            <Link
+              to="/contact"
+              className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground"
+            >
               Contact Me
             </Link>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Right Content - Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="flex justify-center items-center "
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="800"
+          className="flex justify-center items-center"
         >
           <img
             src={logo}
-            className=" shadow-lg  transition-colors duration-300 shadow-borderColor bg-backgroundDark dark:bg-backgroundBg   rounded-full  w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
+            className="shadow-lg transition-colors duration-300 shadow-borderColor bg-backgroundDark dark:bg-backgroundBg rounded-full w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
             alt="Profile"
           />
-        </motion.div>
+        </div>
+
       </div>
     </div>
   );
 };
 
 export default Banner;
+
