@@ -163,9 +163,9 @@ const Skill = () => {
               key={tab}
               role="tab"
               className={`${activeTab === tab
-                ? "tab-active text-buttonBankground dark:text-textColor bg-backgroundDark border-buttonBankground dark:border-buttonTextColor"
-                : "bg-backgroundBg dark:bg-backgroundDark border-textColor"
-                } border-t-2 border-r-2 border-l-2 p-2 rounded-md transition-all duration-300`}
+                ? "tab-active text-buttonBankground dark:text-textColor bg-backgroundDark border-buttonBankground dark:border-buttonTextColor shadow-md shadow-buttonBankground"
+                : "bg-backgroundBg dark:bg-backgroundDark border-textColor "
+                } border-t-2 border-r-2 border-l-2 p-2 rounded-md transition-all duration-300 hover:shadow-md hover:shadow-buttonBankground`}
               onClick={() => setActiveTab(tab)}
             >
               {tab}
@@ -180,7 +180,7 @@ const Skill = () => {
               key={i}
               data-aos="zoom-in"
               data-aos-delay={i * 100}
-              className="flex flex-col items-center cursor-pointer gap-4 p-4 border border-buttonBankground dark:border-textColor bg-backgroundBg dark:bg-backgroundDark rounded-lg shadow shadow-buttonTextColor hover:shadow-lg transition"
+              className="flex flex-col items-center cursor-pointer gap-4 p-4 border border-buttonBankground dark:border-textColor bg-backgroundBg dark:bg-backgroundDark rounded-lg shadow shadow-buttonTextColor transition hover:shadow-md hover:shadow-buttonBankground"
             >
               <img src={skill.logo} alt={skill.name} className="w-14 h-14" />
 

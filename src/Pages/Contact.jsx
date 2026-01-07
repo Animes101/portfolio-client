@@ -218,7 +218,7 @@ const ContactPage = () => {
           <div data-aos="zoom-in" data-aos-delay="700">
             <button
               type="submit"
-              className="btn bg-buttonBankground text-buttonTextColor w-full"
+              className="btn bg-buttonBankground text-buttonTextColor w-full dark:bg-textColor"
             >
               Send Message
             </button>

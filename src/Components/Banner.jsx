@@ -107,7 +107,7 @@ import cv from "../assets/logo/cv.pdf";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-screen flex items-center text-textColor dark:text-textColor bg-backgroundBg dark:bg-backgroundDark">
+    <div className="hero min-h-screen flex items-center text-textColor dark:text-textColor bg-backgroundBg dark:bg-backgroundDark px-4 md:px-0">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         {/* Left Content */}
@@ -165,14 +165,14 @@ const Banner = () => {
               href={cv}
               target="_blank"
               download
-              className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor"
+              className="btn bg-buttonBankground dark:bg-textColor text-buttonTextColor hover:shadow-md hover:shadow-buttonBankground"
             >
               Download CV
             </a>
 
             <Link
               to="/contact"
-              className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground"
+              className="btn btn-outline text-buttonBankground dark:text-textColor hover:bg-backgroundBg dark:bg-backgroundDark border-buttonBankground hover:shadow-md hover:shadow-buttonBankground"
             >
               Contact Me
             </Link>
@@ -190,6 +190,7 @@ const Banner = () => {
             className="shadow-lg transition-colors duration-300 shadow-borderColor bg-backgroundDark dark:bg-backgroundBg rounded-full w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
             alt="Profile"
           />
+         <h1 className="relative right-[100px] uppercase">animes barman </h1>
         </div>
 
       </div>
